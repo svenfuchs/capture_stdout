@@ -1,0 +1,17 @@
+h1. capture_stdout
+
+Adds Kernel.capture_stdout(&block)
+
+Useful e.g. for testing command line tools
+
+<pre>
+  string = 'yeah'
+  output = capture_stdout { print(string) }
+  assert_equal string, output  
+</pre>
+
+h2. Installation
+
+<pre>
+  $ gem install capture_stdout
+</pre>
