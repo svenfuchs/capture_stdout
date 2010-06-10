@@ -1,11 +1,11 @@
 require 'stringio'
- 
+
 module Kernel
   def capture_stdout
     out = StringIO.new
     $stdout = out
     yield
-    return out
+    return out.string
   ensure
     $stdout = STDOUT
   end

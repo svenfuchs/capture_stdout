@@ -9,12 +9,11 @@ Gem::Specification.new do |s|
   s.authors      = ["Sven Fuchs"]
   s.email        = "svenfuchs@artweb-design.de"
   s.homepage     = "http://github.com/svenfuchs/capture_stdout"
-  s.summary      = "[summary]"
-  s.description  = "[description]"
+  s.summary      = "Adds Kernel.capture_stdout(&block)"
+  s.description  = "Adds Kernel.capture_stdout(&block). Useful e.g. for testing command line tools"
 
-  s.files        = 
+  s.files        = Dir['{lib/**/*,[A-Z]*}']
   s.platform     = Gem::Platform::RUBY
   s.require_path = 'lib'
   s.rubyforge_project = '[none]'
-  s.required_rubygems_version = '>= 1.3.6'
 end
